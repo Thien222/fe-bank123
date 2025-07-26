@@ -48,7 +48,7 @@ export default function QTTDHoanTraPage() {
     fetchHosos();
     
     // Kết nối Socket.IO để nhận notification và refresh dữ liệu
-    const newSocket = io(process.env.REACT_APP_API_URL);
+    const newSocket = io('https://fe-bank-1.onrender.com');
     setSocket(newSocket);
     
     const role = localStorage.getItem('role');
